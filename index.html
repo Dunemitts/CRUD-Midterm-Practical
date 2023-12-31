@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="CRUD.js" defer></script>
+    <title>CRUD</title>
+
+    <style>
+        header {
+            height: 50px;
+            font-size:200%;
+            background-color: #F4E4AC;
+            border-style: solid;
+            border-color: #756E52;
+            text-align: center;
+        }
+        .wrapper {
+            margin-top: 16px;
+            display: flex;
+            gap: 50px;
+        }
+        .list-all {
+            background-color: #F4E4AC;
+            border-color: #756E52;
+            border-style: solid;
+            padding: 15px;
+            text-align: center;
+        }
+        table, th, td {
+            border: 1px solid #756E52;
+        }
+        .menu {
+            background-color: #F4E4AC;
+            border-color: #756E52;
+            border-style: solid;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>Book Creator</header>
+    <div class="wrapper">
+        <div class="list-all">
+            <table class="list" id="BookTable">
+                <thead>
+                    <th>Book Inventory</th>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </div>
+        <div class="menu">
+            <p>
+                <label for="choice">What would you like to do?</label>
+                <ul>
+                     <li>Create a Book - C</li>
+                     <li>Read the details for a Book - R</li>
+                     <li>Update the details for a Book - U</li>
+                     <li>Delete a Book - D</li>
+                </ul>
+                <input type="text" id="choice" maxlength="15" size="15">
+                <button onclick="act()">Submit your choice of action</button>
+            </p>
+            <p class="paste"></p>
+        </div>
+    </div>
+ 
+</body>
+</html>
